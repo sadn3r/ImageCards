@@ -38,15 +38,3 @@ def generate_card(card_text: str):
         drawer.text((line_start, CARD_PADDING + (num * (FONT_SIZE + 2))), line, fill=fill, font=font, align="center")
 
     return image
-
-
-image = generate_card("""Raven Frost Ring
-
-Required Level : 45
-+150-250 to Attack Rating
-+15-45 Cold Damage
-+15-20 To Dexterity
-+40 To Mana
-Cold Absorb 20%
-Cannot Be Frozen""")
-image.save('pil_text.png')
